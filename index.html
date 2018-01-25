@@ -1,0 +1,176 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script>
+    <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async=""></script>
+    <title>My Dance Studio</title>
+    <link rel="canonical" href="http://cathyxz.github.io/my-dance-studio/index.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+      /* any custom style goes here */
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+      }
+
+      .title {
+        text-align: center;
+        color: black;
+      }
+
+      .text-decoration-none {
+        text-decoration: none;
+      }
+
+      body {
+        background-color: white;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .fixed {
+        position: fixed;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .navbar-trigger {
+        padding: 1.5rem;
+      }
+
+      main {
+        margin: 4.375rem 10px 0 10px;
+      }
+
+      .header {
+        top: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 101;
+      }
+
+      .items-center {
+        align-items: center;
+      }
+
+      .sidebar-header {
+        position: absolute;
+        top: 0;
+        left: 1.5rem;
+        height: 4.375rem;
+      }
+
+      .sidebar-nav {
+        margin-top: 4.375rem;
+      }
+
+      .sidebar {
+        width: 80vw;
+      }
+
+      .sidebar-nav-item {
+        display: block;
+        margin: 1.5rem;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: black;
+      }
+
+      .uppercase {
+        text-transform: uppercase;
+      }
+
+      .grid-4 {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <header class="fixed flex header items-center grid-4">
+        <div role="button"
+        aria-label="open sidebar" on="tap:header-sidebar.toggle"
+        tabindex="0"
+        class="navbar-trigger ">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 36 36" width="36" height="36"><path fill="currentColor" d="M9 12h18v2H9z"></path><path fill="currentColor" d="M9 17h18v2H9z"></path><path fill="currentColor" d="M9 22h18v2H9z"></path></svg>
+        </div>
+        <a class="text-decoration-none title" href="studio.html">
+          MY STUDIO
+        </a>
+    </header>
+
+    <amp-sidebar id="header-sidebar" class="sidebar" layout="nodisplay">
+      <div class="sidebar-header">
+        <div role="button" aria-label="close sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="navbar-trigger items-start">✕</div>
+      </div>
+      <nav class="sidebar-nav">
+        <ul class="uppercase">
+              <li class="sidebar-nav-item"><a aria-label="Classes" class="nav-link" href="classes.html"><span>Classes</span></a></li>
+              <li class="sidebar-nav-item"><a aria-label="Instructors" class="nav-link" href="instructors.html"><span>Instructors</span></a></li>
+              <li class="sidebar-nav-item"><a aria-label="Schedule" class="nav-link" href="schedule.html"><span>Schedule</span></a></li>
+              <li class="sidebar-nav-item"><a class="nav-link" href="mailto:contact@mydancestudio.com">Contact Us</a></li>
+        </ul>
+      </nav>
+    </amp-sidebar>
+    <main>
+      <div class="container">
+        <amp-carousel height="300"
+          layout="fixed-height"
+          type="carousel">
+          <amp-img
+            height="300"
+            width="400"
+            src="images/dance-1.jpg">
+          </amp-img>
+          <amp-img
+            height="300"
+            width="400"
+            src="images/dance-2.jpg">
+          </amp-img>
+          <amp-img
+            height="300"
+            width="400"
+            src="images/dance-3.jpg">
+          </amp-img>
+        </amp-carousel>
+
+      </div>
+      <div>
+        <p>Welcome to my dance studio! Come join us for a variety of aerial, flexibility, and hip hop classes taught by some of the best instructors in the Bay Area.</p>
+      </div>
+
+      <div>
+        <h2>Studio Locations</h2>
+        <div class="location-container">
+          <h3>Studio 1</h3>
+          <p>4321 Random St, Random City, CA 54321</p>
+          <!-- Add Maps Embed -->
+        </div>
+        <div class="location-container">
+          <h3>Studio 2</h3>
+          <p>1234 Random St, Random City, CA 12345</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Follow us</p>
+      <!-- Add social media embeds -->
+      <p>Contact us</p>
+      <!-- Add mailto form -->
+      <p>Note: this is a sample webpage for a fake dance studio.</p>
+    </footer>
+  </body>
+</html>
