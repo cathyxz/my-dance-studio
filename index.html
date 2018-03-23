@@ -108,6 +108,20 @@
         padding: 16px;
       }
 
+      div.location-container {
+        padding: 12px 16px;
+      }
+
+      .location-container h3,p {
+        margin: 4px;
+      }
+
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
     </style>
   </head>
   <body>
@@ -173,15 +187,45 @@
         <section id="locations">
           <h2>Studio Locations</h2>
           <div>
-            <div class="location-container">
-              <h3>Studio 1</h3>
-              <p>4321 Random St, Random City, CA 54321</p>
-              <!-- Add Maps Embed -->
+            <div class="flex-container">
+              <div class="location-container">
+                <h3>San Francisco</h3>
+                <p>672 S Van Ness Ave</p>
+                <!-- Add Maps Embed -->
+              </div>
+              <div class="location-container">
+                <h3>San Mateo</h3>
+                <p>25 37th Ave</p>
+              </div>
+              <div class="location-container">
+                <h3>Redwood City</h3>
+                <p>2601 Spring St</p>
+              </div>
+              <div class="location-container">
+                <h3>Mountain View</h3>
+                <p>290 Santa Rosa Ave</p>
+              </div>
+              <div class="location-container">
+                <h3>Cupertino</h3>
+                <p>10268 Bandley Dr</p>
+              </div>
+              <div class="location-container">
+                <h3>San Jose</h3>
+                <p>1083 S De Anza Blvd</p>
+              </div>
             </div>
-            <div class="location-container">
-              <h3>Studio 2</h3>
-              <p>1234 Random St, Random City, CA 12345</p>
-            </div>
+            <amp-iframe width="640"
+              title="Enjoy Dance Studio Locations"
+              height="480"
+              layout="responsive"
+              sandbox="allow-scripts allow-same-origin allow-popups"
+              allowfullscreen
+              frameborder="0"
+              src="https://www.google.com/maps/d/embed?mid=1t9PIlchAYUzZ5DrXOGz529RGaI4">
+              <amp-img layout="fill"
+                src="./assets/images/locations.png"
+                placeholder></amp-img>
+            </amp-iframe>
           </div>
         </section>
         <section id="instructors">
