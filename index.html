@@ -30,11 +30,18 @@
         z-index: 1;
         width: 100%;
         padding: 10px;
+        height: 36px;
       }
+
       #sidebar-button {
         width: 36px;
+        height: 36px;
         display: inline-block;
+        z-index: 1;
+        position: absolute;
+        cursor: pointer;
       }
+
       #header-title {
         position: absolute;
         top: 0;
@@ -50,6 +57,7 @@
         background-color: #102027;
         border: black solid 1px;
         text-align: center;
+        padding: 5px;
       }
 
       a {
@@ -64,6 +72,22 @@
         padding: 10px;
       }
 
+      amp-sidebar {
+        background-color: #000a12;
+        width: 30%;
+      }
+
+      .sidebar-nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li.sidebar-nav-item {
+        padding: 5px 20px;
+        font-size: 24px;
+      }
+
       ul.nav {
         margin: 0;
         padding: 0;
@@ -72,6 +96,16 @@
       ul.nav li {
         padding: 5px;
         display: inline-block;
+      }
+
+      #sidebar-close-button {
+        cursor: pointer;
+        height: 54px;
+        width: 54px;
+      }
+
+      #sidebar-close-button svg {
+        padding: 16px;
       }
 
     </style>
@@ -91,7 +125,9 @@
     </header>
     <amp-sidebar id="header-sidebar" class="" layout="nodisplay">
       <div class="sidebar-header">
-        <div role="button" aria-label="close sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="navbar-trigger items-start">✕</div>
+        <div id="sidebar-close-button" role="button" aria-label="close sidebar" on="tap:header-sidebar.toggle" tabindex="0">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 125" fill="currentColor" width="24" height="24"><path d="M59.1,50l34.6-34.6c2.4-2.4,2.4-6.3,0-8.7c-2.4-2.4-6.3-2.4-8.7,0L50.4,41.3L15.8,6.8  c-2.4-2.4-6.3-2.4-8.7,0c-2.4,2.4-2.4,6.3,0,8.7L41.7,50L7.2,84.6c-2.4,2.4-2.4,6.3,0,8.7c2.4,2.4,6.3,2.4,8.7,0l34.6-34.6  l34.6,34.6c2.4,2.4,6.3,2.4,8.7,0c2.4-2.4,2.4-6.3,0-8.7L59.1,50z"/></svg>
+        </div>
       </div>
       <nav class="sidebar-nav">
         <ul class="uppercase">
