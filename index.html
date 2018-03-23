@@ -14,13 +14,19 @@
 
     <style amp-custom="">
       body {
-        background-color: #62727b;
-        color: white;
+        background-color: #E1E2E1;
+        color: #000a12;
         font-family: 'Open Sans Condensed', sans-serif;
       }
 
-      h1, h2, h3 {
+      h1, h2 {
         font-family: 'Share Tech', sans-serif;
+        color: white;
+      }
+
+      h3 {
+        font-family: 'Share Tech', sans-serif;
+        color: #000a12;
       }
 
       header {
@@ -40,6 +46,7 @@
         z-index: 1;
         position: absolute;
         cursor: pointer;
+        color: white;
       }
 
       #header-title {
@@ -102,6 +109,7 @@
         cursor: pointer;
         height: 54px;
         width: 54px;
+        color: white;
       }
 
       #sidebar-close-button svg {
@@ -112,7 +120,7 @@
         padding: 12px 16px;
       }
 
-      .location-container h3,p {
+      .location-container h3, location-container p {
         margin: 4px;
       }
 
@@ -120,6 +128,34 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+      }
+
+      .instructor-card {
+        padding: 16px;
+      }
+
+      .instructor-card > div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .instructor-description {
+        margin: 12px;
+        min-width: 160px;
+        max-width: 480px;
+      }
+
+      .instructor-card amp-img {
+        border: 1px solid #000a12;
+        min-width: 145px;
+        margin: 12px;
+      }
+
+      .instructor-card h3 {
+        color: #000a12;
+        margin: 0 12px;
       }
 
     </style>
@@ -228,13 +264,81 @@
             </amp-iframe>
           </div>
         </section>
-        <section id="instructors">
-          <h2>Instructors</h4>
-          <div>No content here yet</div>
-        </section>
+
         <section id="classes">
           <h2>Classes</h4>
           <div>No content here yet</div>
+        </section>
+        <section id="instructors">
+          <h2>Instructors</h4>
+          <div>
+            <div class="flex-container">
+              <!-- Start Instructor card -->
+              <div class="instructor-card">
+                <h3>Sarah</h3>
+                <div>
+                  <amp-img layout="responsive"
+                    width="145"
+                    height="175"
+                    src="./assets/images/sarah.webp"
+                  >
+                  </amp-img>
+                  <div class="instructor-description">
+                    Enjoy Dance Studio创始人，联合国科教文组织国际舞蹈委员会（CID）行政理事会成员。专注从事街舞教学12年。擅长各类Hiphop、New Jazz、Kpop等舞蹈，有扎实的理论知识和丰富的基本功教学经验。其渐进式的引导教学能帮助学生们快速入门并掌握舞蹈精髓。
+                  </div>
+                </div>
+              </div>
+              <!-- End Instructor card -->
+              <!-- Start Instructor card -->
+              <div class="instructor-card">
+                <h3>Connie</h3>
+                <div>
+                  <amp-img layout="responsive"
+                    width="145"
+                    height="175"
+                    src="./assets/images/connie.webp"
+                  >
+                  </amp-img>
+                  <div class="instructor-description">
+                    舞龄7年，曾担任Berkeley首席人气韩舞团KPG的Director，今年7月赴韩国1M Studio及韩娱公司进行练习生特训一个多月。擅长性感酷炫的韩国女团及各类爵士舞蹈，本期将重点帮助学生训练表现力、甩头技巧及肢体的柔韧性和爆发力的灵活运用。
+                  </div>
+                </div>
+              </div>
+              <!-- End Instructor card -->
+              <!-- Start Instructor card -->
+              <div class="instructor-card">
+                <h3>Nate</h3>
+                <div>
+                  <amp-img layout="responsive"
+                    width="145"
+                    height="175"
+                    src="./assets/images/nate.webp"
+                  >
+                  </amp-img>
+                  <div class="instructor-description">
+                    舞龄6年，是全排名前十的专业Hip Hop舞团 Chapkis Dance Family史上招进的第一位华人成员。曾是南湾知名学生舞团的President，也是The Kore舞社的Leader，在Kpop Dance Festival Competition獲得第3名 ，並出演各大灣區活動的表演嘉賓。擅长干净利落、动作敏捷的男生类Kpop舞蹈，主要训练学生们的速度爆发力、身体控制性及协调性。
+                  </div>
+                </div>
+              </div>
+              <!-- End Instructor card -->
+              <!-- Start Instructor card -->
+              <div class="instructor-card">
+                  <h3>Jacky</h3>
+                  <div>
+                    <amp-img layout="responsive"
+                      width="145"
+                      height="175"
+                      src="./assets/images/jacky.webp"
+                    >
+                    </amp-img>
+                    <div class="instructor-description">
+                      舞龄8年，担任广州培正FANCYSOUL舞团的Leader及编舞，曾与Nate导师联合组织南湾知名学生舞团The Cantogga, Elite Dance，且曾在UC Berkeley Dance Team, 广州Speed舞团学生街舞联盟Mstyle担任表演及比赛编舞. 曾所属团队：北京嘉禾舞社ZAHA Sugar, 北京RMB Crew Future, 北京龙舞天团, 广州Speed街舞学生联盟Mstyle, 广州FANCYSOUL, UC Berkeley Competition Team: Identity X, True Element, Main Stacks.
+                    </div>
+                  </div>
+                </div>
+                <!-- End Instructor card -->
+            </div>
+          </div>
         </section>
       </amp-accordion>
     </main>
