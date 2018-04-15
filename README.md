@@ -1,3 +1,5 @@
-# Sample Dance Studio Webpage
+# Enjoy Dance Studio Webpage
 
-This is a toy html site for purposes of playing with web technologies. The studio isn't real! All images are from unsplash.com.
+This is an in-progress webpage designed for Enjoy Dance Studio. All images, text, content belong to Enjoy Dance Studio. 
+
+PRs, designs, suggestions welcome. 
